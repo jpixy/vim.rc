@@ -1,6 +1,39 @@
 ![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
 
-# The Ultimate vimrc
+# The Ultimate vimrc - Replace pathogen with vim-plug as Vim plug manager
+
+This repo is fork from https://github.com/amix/vimrc.git
+
+Please run:
+
+```
+
+	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+Then open vim, run
+    :PlugInstall
+
+
+```
+
+Check all plugins list:
+
+```
+:PlugStatus
+```
+
+Upgrade all plugins:
+
+```
+:PlugUpdate
+```
+
+
+------------------
+Below is the original doc from https://github.com/amix/vimrc.git
+------------------
+
 
 Over the last 10 years, I have used and tweaked Vim. This configuration is the ultimate vimrc (or at least my version of it).
 
