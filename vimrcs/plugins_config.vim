@@ -8,11 +8,11 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-let s:vim_runtime = expand('<sfile>:p:h')."/.."
-call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
-call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
-call pathogen#helptags()
+" let s:vim_runtime = expand('<sfile>:p:h')."/.."
+" call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
+" call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
+" call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
+" call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""
@@ -78,13 +78,23 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
+let NERDTreeHighlightCursorline=1
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
+nmap <F2> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+" let the course on the right editor zone by default
+" Jump to the main window
+autocmd VimEnter * wincmd p
+" Close Nerdtree if no files specified
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -168,3 +178,9 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim-go
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_command = "goimports"
