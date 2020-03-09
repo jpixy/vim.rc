@@ -52,6 +52,24 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
+" Show line numbers
+set number
+" set relativenumber
+
+" Show the gird
+set cursorline
+set cursorcolumn
+
+" Disable the automatic comments new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set fo-=r
+
+" Disable auto indent
+set noautoindent
+set nocindent
+set nosmartindent
+set noautoindent
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
