@@ -52,10 +52,6 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-" Show line numbers
-set number
-" set relativenumber
-
 " Show the gird
 set cursorline
 set cursorcolumn
@@ -69,6 +65,15 @@ set noautoindent
 set nocindent
 set nosmartindent
 set noautoindent
+
+" Show product automatic toggling line number mode
+set number relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
