@@ -69,7 +69,10 @@ set nocindent
 set nosmartindent
 set noautoindent
 
-" Show product automatic toggling line number mode
+" Toggle disable autoindent
+set pastetoggle=<F9>
+
+" Show productivity automatic toggling line number mode
 set number relativenumber
 
 augroup numbertoggle
