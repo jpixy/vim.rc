@@ -30,6 +30,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set to support mouse
+set mouse=a
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
