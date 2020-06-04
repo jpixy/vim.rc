@@ -189,6 +189,16 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Edit
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" At first, make sure run 'vim --version | grep clip' result will show '+clipboard'
+" For ubuntu, should install gvim; For Fedora, should instal vim-X11
+" If you use Fedora, you can edit .zshrc to add lines:
+" alias vi='vimx'
+" alias vim='vimx'
+" Make vimx to use system clipboard by default
+set clipboard=unnamed
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo

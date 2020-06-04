@@ -4,6 +4,7 @@
 call plug#begin('~/.vim_runtime/plugins')
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'dense-analysis/ale'
 Plug 'https://github.com/maxbrunsfeld/vim-yankstack'
 Plug 'https://github.com/mileszs/ack.vim'
