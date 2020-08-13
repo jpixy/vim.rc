@@ -49,6 +49,9 @@ Plug 'https://github.com/leafgarland/typescript-vim'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/Vimjas/vim-python-pep8-indent'
 Plug 'majutsushi/tagbar'
+Plug 'https://github.com/ludovicchabant/vim-gutentags'
+Plug 'https://github.com/ycm-core/YouCompleteMe'
+Plug 'https://github.com/Shougo/echodoc.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Initialize plugin system
