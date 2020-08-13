@@ -52,6 +52,7 @@ Plug 'majutsushi/tagbar'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/ycm-core/YouCompleteMe'
 Plug 'https://github.com/Shougo/echodoc.vim'
+Plug 'sbdchd/neoformat'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Initialize plugin system
