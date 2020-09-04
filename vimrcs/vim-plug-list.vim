@@ -54,6 +54,7 @@ Plug 'https://github.com/ycm-core/YouCompleteMe'
 Plug 'https://github.com/Shougo/echodoc.vim'
 Plug 'sbdchd/neoformat'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug '907th/vim-auto-save'
 
 " Initialize plugin system
 call plug#end()
