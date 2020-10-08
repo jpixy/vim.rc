@@ -6,12 +6,12 @@ echo '[*] Preparing Neovim config directory ...'
 mkdir -p ~/.config/nvim
 
 if [ -f "$HOME/.config/nvim/init.vim" ];then
-  echo "~/.config/nvim/init.vim exist. backup it ... "
-  mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim.bak
-  touch ~/.config/nvim/init.vim
+    echo "~/.config/nvim/init.vim exist. backup it ... "
+    mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim.bak
+    touch ~/.config/nvim/init.vim
 else
-  echo "~/.config/nvim/init.vim does not exist. create new one."
-  touch ~/.config/nvim/init.vim
+    echo "~/.config/nvim/init.vim does not exist. create new one."
+    touch ~/.config/nvim/init.vim
 fi
 
 
