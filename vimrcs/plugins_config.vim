@@ -437,10 +437,10 @@ let g:echodoc#type = 'popup'
 highlight link EchoDocPopup Pmenu
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Neoformat
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <leader>ff :Neoformat<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Neoformat
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"nmap <leader>ff :Neoformat<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -459,3 +459,8 @@ let g:go_fmt_command = "goimports"
 "let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim-autoformat
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>ff :Autoformat<CR>
+" au BufWrite * :Autoformat
