@@ -54,9 +54,11 @@ Plug 'https://github.com/ludovicchabant/vim-gutentags'
 " Plug 'https://github.com/ycm-core/YouCompleteMe'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/Shougo/echodoc.vim'
-Plug 'sbdchd/neoformat'
+" Plug 'sbdchd/neoformat'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug '907th/vim-auto-save'
+Plug 'Chiel92/vim-autoformat'
+
 
 " Initialize plugin system
 call plug#end()
