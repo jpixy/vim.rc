@@ -4,6 +4,12 @@
 
 This repo is fork from https://github.com/amix/vimrc.git
 
+One command to install or setup:
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/johnnyjpixy/vim.rc/master/install.sh)"
+
+
+
 Please run:
 
 ```
