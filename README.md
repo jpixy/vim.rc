@@ -15,7 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/johnnyjpixy/vim.rc/master/
 Please run:
 
 ```
-git clone --depth=1 https://github.com/johnnyjpixy/vim-conf.git ~/.vim_runtime
+git clone --depth=1 https://github.com/johnnyjpixy/vim.rc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
