@@ -2,6 +2,7 @@
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim_runtime/plugins')
+" call plug#begin('~/.config/nvim_runtime/plugins')
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -58,6 +59,7 @@ Plug 'https://github.com/Shougo/echodoc.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug '907th/vim-auto-save'
 Plug 'Chiel92/vim-autoformat'
+" Plug 'puremourning/vimspector'
 
 
 " Initialize plugin system
