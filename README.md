@@ -8,14 +8,14 @@ This repo is fork from https://github.com/amix/vimrc.git
 One command to install and setup:
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/johnnyjpixy/vim.rc/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jpixy/vim.rc/master/install.sh)"
 ```
 
 
 Please run:
 
 ```
-git clone --depth=1 https://github.com/johnnyjpixy/vim.rc.git ~/.vim_runtime
+git clone --depth=1 https://github.com/jpixy/vim.rc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
