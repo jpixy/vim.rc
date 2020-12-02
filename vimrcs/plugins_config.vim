@@ -464,3 +464,10 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>ff :Autoformat<CR>
 " au BufWrite * :Autoformat
+
+
+""""""""""""""""""""""""""""""
+" => vimspector
+""""""""""""""""""""""""""""""
+" let g:vimspector_enable_mappings = 'HUMAN'
+" let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
