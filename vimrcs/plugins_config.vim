@@ -472,6 +472,20 @@ nmap <leader>ff :Autoformat<CR>
 """"""""""""""""""""""""""""""
 " let g:vimspector_enable_mappings = 'HUMAN'
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
-" let g:vimspector_base_dir=expand( '$HOME/.vim_runtime/plugins_conf/vimspector-gadgets' )
+" let g:vimspector_base_dir=expand( '$HOME/.vim_runtime/plugins_conf/vimspector_gadgets' )
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB', 'vscode-go', 'vscode-bash-debug', 'vscode-java-debug', 'debugger-for-chrome' ]
 let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB', 'vscode-go', 'vscode-bash-debug', 'vscode-java-debug' ]
+
+" predefined vimspector_json_templates
+" need to install fzf at frist
+function! s:read_template_into_buffer(template)
+	" has to be a function to avoid the extra space fzf#run insers otherwise
+	execute '0r ~/.vim_runtime/plugins_conf/vimspector_json_templates/'.a:template
+endfunction
+command! -bang -nargs=* LoadVimSpectorJsonTemplate call fzf#run({
+			\   'source': 'ls -1 ~/.vim_runtime/plugins_conf/vimspector_json_templates',
+			\   'down': 20,
+			\   'sink': function('<sid>read_template_into_buffer')
+			\ })
+noremap <leader>vst :tabe .vimspector.json<CR>:LoadVimSpectorJsonTemplate<CR>
+
