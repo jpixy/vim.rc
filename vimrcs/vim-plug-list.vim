@@ -13,8 +13,8 @@ Plug 'https://github.com/jlanzarotta/bufexplorer'
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'https://github.com/vim-scripts/mayansmoke'
-Plug 'https://github.com/scrooloose/nerdtree'
-Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin'
+" Plug 'https://github.com/scrooloose/nerdtree'
+" Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/chr4/nginx.vim'
 Plug 'https://github.com/amix/open_file_under_cursor.vim'
 Plug 'https://github.com/vim-scripts/tlib'
@@ -59,7 +59,9 @@ Plug 'https://github.com/Shougo/echodoc.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug '907th/vim-auto-save'
 Plug 'Chiel92/vim-autoformat'
-" Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash  --force-enable-chrome --force-enable-java --force-enable-javac --update-gadget-config'}
+" Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java --force-enable-chrome'}
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java'}
 
 
 " Initialize plugin system
