@@ -37,6 +37,11 @@ Upgrade all plugins:
 :PlugUpdate
 ```
 
+```
+:CocList extensions
+
+:CocInstall coc-browser coc-clangd coc-clang-format-style-options coc-cmake coc-css coc-cssmodules coc-diagnostic coc-eslint coc-explorer coc-fzf-preview coc-gist coc-git coc-go coc-graphql coc-highlight coc-html coc-htmlhint coc-html-css-support coc-java coc-json coc-just-complete coc-lists coc-markdownlint coc-perl coc-python coc-rls coc-rome coc-rust-analyzer coc-sh coc-stylelintplus coc-stylelint coc-snippets coc-spell-checker coc-sql coc-swagger coc-tasks coc-toml coc-texlab coc-tsserver coc-vetur coc-xml coc-yaml coc-yank
+```
 
 ------------------
 Below is the original doc from https://github.com/amix/vimrc.git
