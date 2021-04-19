@@ -123,7 +123,6 @@ let NERDTreeHighlightCursorline=1
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
-nmap <F2> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 " let the course on the right editor zone by default
@@ -220,7 +219,7 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F3> :TagbarToggle<CR>
+map <leader>tt :TagbarToggle<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -424,6 +423,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" Mappings for CoC-explorer
+map <leader>ee :CocCommand explorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => echodoc
@@ -447,6 +448,14 @@ highlight link EchoDocPopup Pmenu
 " => Vim-go
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_command = "goimports"
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+" highlight settings
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -464,3 +473,27 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>ff :Autoformat<CR>
 " au BufWrite * :Autoformat
+
+
+""""""""""""""""""""""""""""""
+" => vimspector
+""""""""""""""""""""""""""""""
+" let g:vimspector_enable_mappings = 'HUMAN'
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+" let g:vimspector_base_dir=expand( '$HOME/.vim_runtime/plugins_conf/vimspector_gadgets' )
+" let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB', 'vscode-go', 'vscode-bash-debug', 'vscode-java-debug', 'debugger-for-chrome' ]
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB', 'vscode-go', 'vscode-bash-debug', 'vscode-java-debug' ]
+
+" predefined vimspector_json_templates
+" need to install fzf at frist
+function! s:read_template_into_buffer(template)
+	" has to be a function to avoid the extra space fzf#run insers otherwise
+	execute '0r ~/.vim_runtime/plugins_conf/vimspector_json_templates/'.a:template
+endfunction
+command! -bang -nargs=* LoadVimSpectorJsonTemplate call fzf#run({
+			\   'source': 'ls -1 ~/.vim_runtime/plugins_conf/vimspector_json_templates',
+			\   'down': 20,
+			\   'sink': function('<sid>read_template_into_buffer')
+			\ })
+noremap <leader>vst :tabe .vimspector.json<CR>:LoadVimSpectorJsonTemplate<CR>
+

@@ -4,10 +4,18 @@
 
 This repo is fork from https://github.com/amix/vimrc.git
 
+
+One command to install and setup:
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jpixy/vim.rc/master/install.sh)"
+```
+
+
 Please run:
 
 ```
-git clone --depth=1 https://github.com/johnnyjpixy/vim-conf.git ~/.vim_runtime
+git clone --depth=1 https://github.com/jpixy/vim.rc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
@@ -29,6 +37,12 @@ Upgrade all plugins:
 :PlugUpdate
 ```
 
+```
+:CocList extensions
+
+:CocInstall coc-browser coc-clangd coc-clang-format-style-options coc-cmake coc-css coc-cssmodules coc-diagnostic coc-eslint coc-explorer coc-fzf-preview coc-git coc-go coc-graphql coc-highlight coc-html coc-htmlhint coc-html-css-support coc-java coc-json coc-just-complete coc-lists coc-markdownlint coc-perl coc-python coc-rls coc-rome coc-rust-analyzer coc-sh coc-stylelintplus coc-stylelint coc-snippets coc-spell-checker coc-sql coc-swagger coc-tasks coc-toml coc-texlab coc-tsserver coc-vetur coc-xml coc-yaml coc-yank
+
+```
 
 ------------------
 Below is the original doc from https://github.com/amix/vimrc.git
