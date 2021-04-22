@@ -4,6 +4,13 @@
 call plug#begin('~/.vim_runtime/plugins')
 " call plug#begin('~/.config/nvim_runtime/plugins')
 
+" Colorschema
+Plug 'https://github.com/altercation/vim-colors-solarized'
+Plug 'https://github.com/morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'joshdick/onedark.vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'dense-analysis/ale'
@@ -21,7 +28,6 @@ Plug 'https://github.com/chr4/nginx.vim'
 " Plug 'https://github.com/MarcWeber/vim-addon-mw-utils'
 " Plug 'https://github.com/sophacles/vim-bundle-mako'
 " Plug 'https://github.com/kchmck/vim-coffee-script'
-Plug 'https://github.com/altercation/vim-colors-solarized'
 Plug 'https://github.com/michaeljsmith/vim-indent-object'
 " Plug 'https://github.com/groenewege/vim-less'
 " Plug 'https://github.com/therubymug/vim-pyte'
@@ -36,7 +42,6 @@ Plug 'https://github.com/terryma/vim-multiple-cursors'
 " Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/airblade/vim-gitgutter'
-Plug 'https://github.com/morhetz/gruvbox'
 Plug 'https://github.com/nvie/vim-flake8'
 " Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'https://github.com/itchyny/lightline.vim'

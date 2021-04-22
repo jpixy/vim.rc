@@ -1,7 +1,8 @@
 try
-    colorscheme gruvbox
+    colorscheme PaperColor
+    " colorscheme gruvbox
 catch
 endtry
 
-set background=dark
+set background=light
 
