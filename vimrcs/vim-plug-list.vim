@@ -5,11 +5,24 @@ call plug#begin('~/.vim_runtime/plugins')
 " call plug#begin('~/.config/nvim_runtime/plugins')
 
 " Colorschema
-Plug 'https://github.com/altercation/vim-colors-solarized'
+" Plug 'xolox/vim-misc/'
+" Plug 'xolox/vim-colorscheme-switcher'
+" Plug 'flazz/vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'tomasr/molokai'
+" Plug 'joshdick/onedark.vim'
+" Plug 'arcticicestudio/nord-vim'
 Plug 'https://github.com/morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'joshdick/onedark.vim'
+Plug 'benreic/peakseacolor'
+Plug 'altercation/solarized'
+Plug 'altercation/vim-colors-solarized'
+Plug 'sickill/vim-monokai'
+Plug 'cocopon/iceberg.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'w0ng/vim-hybrid'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/rainbow_parentheses.vim'
