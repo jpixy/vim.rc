@@ -12,6 +12,7 @@ call plug#begin('~/.vim_runtime/plugins')
 " Plug 'tomasr/molokai'
 " Plug 'joshdick/onedark.vim'
 " Plug 'arcticicestudio/nord-vim'
+" Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'https://github.com/morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'benreic/peakseacolor'
@@ -21,7 +22,6 @@ Plug 'sickill/vim-monokai'
 Plug 'cocopon/iceberg.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'w0ng/vim-hybrid'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 Plug 'jiangmiao/auto-pairs'
