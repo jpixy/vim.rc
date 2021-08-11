@@ -2,7 +2,11 @@
 "    set t_Co=256
 " endif
 
-" Setup cursor mode in differ VIM mode
+
+" enable mouse
+" set mouse=a
+
+" setup cursor mode in differ VIM mode
 " autocmd InsertEnter,InsertLeave * set cul!
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
