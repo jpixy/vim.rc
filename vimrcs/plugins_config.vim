@@ -112,6 +112,24 @@ let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
 
 
+""""""""""""""""""""""""""""""
+" => bufExplorer plugin
+""""""""""""""""""""""""""""""
+let g:netrw_hide = 1
+""" 1: Show list details; 2: Common list; 3: Tree
+let g:netrw_liststyle = 3
+""" hind the head 
+" let g:netrw_banner = 0
+""" Setup which window to show the opened file. 0: current window, replace the netrw window; 1: H-open; 2: V-open; 3: Tab-open; 4: New window to replace
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 24
+""" change open window on left to right
+" let g:netrw_altv = 1
+let g:netrw_chgwin = 2
+let g:netrw_list_hide = '.*\.swp$'
+" let g:netrw_localrmdir = 'rm -rf'
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
