@@ -113,7 +113,7 @@ set grepprg=/bin/grep\ -nH
 
 
 """"""""""""""""""""""""""""""
-" => bufExplorer plugin
+" => Netrw plugin
 """"""""""""""""""""""""""""""
 let g:netrw_hide = 1
 """ 1: Show list details; 2: Common list; 3: Tree
