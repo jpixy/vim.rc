@@ -24,6 +24,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
+Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/rainbow_parentheses.vim'
