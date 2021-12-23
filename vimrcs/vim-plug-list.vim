@@ -1,6 +1,10 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
+
+" This line is need by sheerun/vim-polyglot plugin
+set nocompatible
+
 call plug#begin('~/.vim_runtime/plugins')
 " call plug#begin('~/.config/nvim_runtime/plugins')
 
@@ -24,7 +28,11 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
-Plug 'martinda/Jenkinsfile-vim-syntax'
+" This is A collection of language packs for Vim.
+Plug 'https://github.com/sheerun/vim-polyglot'
+" Plug 'https://github.com/pearofducks/ansible-vim'
+" Plug 'martinda/Jenkinsfile-vim-syntax'
+
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/rainbow_parentheses.vim'
@@ -57,7 +65,6 @@ Plug 'https://github.com/terryma/vim-multiple-cursors'
 " Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/airblade/vim-gitgutter'
-Plug 'https://github.com/pearofducks/ansible-vim'
 Plug 'https://github.com/nvie/vim-flake8'
 " Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'https://github.com/itchyny/lightline.vim'
