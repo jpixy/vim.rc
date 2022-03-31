@@ -89,7 +89,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'Chiel92/vim-autoformat'
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash  --force-enable-chrome --force-enable-java --force-enable-javac --update-gadget-config'}
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java --force-enable-chrome'}
-Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java'}
+" Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java'}
 
 
 " Initialize plugin system
