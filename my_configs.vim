@@ -12,6 +12,20 @@ autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
 
 
+
+" format code
+" gg=G
+
+
+
+" set nu
+" set nonu
+" set rnu
+" set nornu
+
+" set textwidth=80
+set tw=80
+
 set t_Co=256
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
