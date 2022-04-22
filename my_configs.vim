@@ -15,6 +15,7 @@ autocmd InsertLeave * set nocul
 
 " format code
 " gg=G
+" gggqG
 
 
 
@@ -25,6 +26,14 @@ autocmd InsertLeave * set nocul
 
 " set textwidth=80
 set tw=80
+
+set colorcolumn=80
+" set cc=80
+" highlight ColorColumn ctermbg=lightcyan guibg=blue
+" hi ColorColumn ctermbg=0 guibg=lightgrey
+
+" set wrap
+" set nowrap
 
 set t_Co=256
 highlight Normal ctermbg=NONE
