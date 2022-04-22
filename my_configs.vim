@@ -1,3 +1,17 @@
+" VIM Commands
+
+" format code
+" gg=G
+" gggqG
+
+" :bo terminal
+" :vert terminal
+" :tab terminal
+" :leftabove vert term
+" :rightbelow vert term
+
+
+
 " if !has("gui_running")
 "    set t_Co=256
 " endif
@@ -11,11 +25,6 @@
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
 
-
-
-" format code
-" gg=G
-" gggqG
 
 
 
