@@ -35,6 +35,17 @@ set colorcolumn=80
 " set wrap
 " set nowrap
 
+filetype on
+set autoindent
+set smartindent
+" set tab width
+set tabstop=4
+" set ts=4
+" set autowrapline
+set shiftwidth=4
+" set showmatch
+
+
 set t_Co=256
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
