@@ -86,7 +86,8 @@ Plug 'https://github.com/Shougo/echodoc.vim'
 " Plug 'sbdchd/neoformat'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug '907th/vim-auto-save'
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
+Plug 'vim-autoformat/vim-autoformat'
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash  --force-enable-chrome --force-enable-java --force-enable-javac --update-gadget-config'}
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java --force-enable-chrome'}
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-rust --enable-python --enable-go --enable-bash --force-enable-java'}
