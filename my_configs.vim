@@ -34,7 +34,7 @@ autocmd InsertLeave * set nocul
 " set nornu
 
 " set textwidth=80
-set tw=80
+" set tw=80
 
 set colorcolumn=80
 " set cc=80
