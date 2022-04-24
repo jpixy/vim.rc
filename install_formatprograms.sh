@@ -61,7 +61,7 @@ npm install js-beautify eslint
 npm install remark-cli
 
 ### Shell
-go install mvdan.cc/sh/cmd/shfmt
+go install mvdan.cc/sh/cmd/shfmt@latest
 
 ### SQL
 pip install sqlparse
