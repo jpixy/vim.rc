@@ -457,8 +457,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 map <leader>ee :CocCommand explorer<cr>
 
 " Costome COC config location
-let g:coc_config_home = '$HOME/.vim_runtime/plugins_conf/'
-let g:coc_data_home = '$HOME/.vim_runtime/plugins/'
+let g:coc_config_home = '$HOME/.vim_runtime/plugins_conf/coc_config/'
+let g:coc_data_home = '$HOME/.vim_runtime/plugins/coc_data/'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
