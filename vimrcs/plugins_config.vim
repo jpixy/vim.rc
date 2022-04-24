@@ -456,6 +456,11 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Mappings for CoC-explorer
 map <leader>ee :CocCommand explorer<cr>
 
+" Costome COC config location
+let g:coc_config_home = '$HOME/.vim_runtime/plugins_conf/'
+let g:coc_data_home = '$HOME/.vim_runtime/plugins/'
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => echodoc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
