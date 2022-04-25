@@ -516,6 +516,7 @@ let g:go_highlight_operators = 1
 " => Vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>ff :Autoformat<CR>
+""" autoformat upon saving file
 " au BufWrite * :Autoformat
 
 
