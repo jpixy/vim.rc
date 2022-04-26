@@ -61,9 +61,10 @@ highlight nonText ctermbg=NONE
 set background=light
 
 try
+    colorscheme default
     " colorscheme purify
     " colorscheme molokai
-    colorscheme PaperColor
+    " colorscheme PaperColor
     " colorscheme grubox
 catch
 endtry
