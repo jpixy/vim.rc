@@ -58,7 +58,10 @@ set shiftwidth=4
 set t_Co=256
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
-set background=light
+
+
+
+" set background=light
 
 try
     colorscheme default
