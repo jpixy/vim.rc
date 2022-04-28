@@ -27,11 +27,22 @@ autocmd InsertLeave * set nocul
 
 
 
-
-" set nu
+set nu
 " set nonu
 " set rnu
 " set nornu
+
+""" Below code is in basic.vim line#75 - 82
+" " Show productivity automatic toggling line number mode
+" set number relativenumber
+
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
+"   autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+" augroup END
+
+
 
 " set textwidth=80
 " set tw=80

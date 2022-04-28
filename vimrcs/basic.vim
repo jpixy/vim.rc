@@ -72,14 +72,14 @@ set noautoindent
 " Toggle disable autoindent
 set pastetoggle=<F9>
 
-" Show productivity automatic toggling line number mode
-set number relativenumber
+" " Show productivity automatic toggling line number mode
+" set number relativenumber
 
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
-  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
-augroup END
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
+"   autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+" augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
