@@ -12,9 +12,6 @@
 
 
 
-" if !has("gui_running")
-"    set t_Co=256
-" endif
 
 
 " enable mouse
@@ -24,6 +21,10 @@
 " autocmd InsertEnter,InsertLeave * set cul!
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
+
+
+
+set foldmethod=indent
 
 
 
@@ -66,6 +67,10 @@ set shiftwidth=4
 " set showmatch
 
 
+
+" if !has("gui_running")
+"    set t_Co=256
+" endif
 set t_Co=256
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
