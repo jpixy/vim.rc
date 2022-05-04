@@ -41,7 +41,7 @@ Plug 'https://github.com/maximbaz/lightline-ale'
 Plug 'https://github.com/jlanzarotta/bufexplorer'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-surround'
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 " Plug 'https://github.com/scrooloose/nerdtree'
 " Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
