@@ -516,6 +516,11 @@ let g:go_highlight_operators = 1
 " => Vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>ff :Autoformat<CR>
+""" C settings
+let g:formatdef_custom_c='"astyle --style=google"'
+let g:formatters_c = ['custom_c']
+let g:formatdef_custom_cpp = '"astyle --style=google"'
+let g:formatters_cpp = ['custom_cpp']
 """ autoformat upon saving file
 " au BufWrite * :Autoformat
 
