@@ -79,6 +79,8 @@ apt-cyg install python3-devel  # for python3.x installs
 
 
 ```
+:CocConfig
+:CocCommand python.setInterpreter
 :CocList extensions
 
 :CocInstall coc-browser coc-clangd coc-clang-format-style-options coc-cmake coc-css coc-cssmodules coc-diagnostic coc-eslint coc-explorer coc-fzf-preview coc-git coc-go coc-graphql coc-highlight coc-html coc-htmlhint coc-html-css-support coc-java coc-json coc-just-complete coc-lists coc-markdownlint coc-perl coc-python coc-rls coc-rome coc-rust-analyzer coc-sh coc-stylelintplus coc-stylelint coc-snippets coc-spell-checker coc-sql coc-swagger coc-tasks coc-toml coc-texlab coc-tsserver coc-vetur coc-xml coc-yaml coc-yank
