@@ -48,6 +48,7 @@ sudo $PM install -y astyle
 ### Python
 sudo $PM install -y python3-autopep8
 sudo ln -s /usr/bin/python3-autopep8 /usr/bin/autopep8
+pip install flake8
 
 ### Javascript and JSON
 # sudo npm install -g js-beautify eslint
