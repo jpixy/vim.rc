@@ -1,19 +1,3 @@
-" VIM Commands
-
-" format code
-" gg=G
-" gggqG
-
-" :bo terminal
-" :vert terminal
-" :tab terminal
-" :leftabove vert term
-" :rightbelow vert term
-
-
-
-
-
 " enable mouse
 " set mouse=a
 
