@@ -23,12 +23,12 @@ call plug#begin('~/.vim_runtime/plugins')
 " Plug 'cocopon/iceberg.vim'
 " Plug 'nanotech/jellybeans.vim'
 " Plug 'w0ng/vim-hybrid'
-Plug 'https://github.com/morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'altercation/solarized'
-Plug 'altercation/vim-colors-solarized'
-Plug 'sickill/vim-monokai'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
+" Plug 'https://github.com/morhetz/gruvbox'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'altercation/solarized'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'sickill/vim-monokai'
+" Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 
 """ VIM appearance
@@ -77,7 +77,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'https://github.com/rust-lang/rust.vim'
 " Plug 'https://github.com/plasticboy/vim-markdown'
 " Plug 'https://github.com/vim-ruby/vim-ruby'
