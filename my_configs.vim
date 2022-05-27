@@ -55,9 +55,9 @@ set shiftwidth=4
 " if !has("gui_running")
 "    set t_Co=256
 " endif
-set t_Co=256
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
+" set t_Co=256
+" highlight Normal ctermbg=NONE
+" highlight nonText ctermbg=NONE
 
 
 

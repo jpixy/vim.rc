@@ -24,7 +24,7 @@ Get_Dist_Name(){
         PM='apt'
     elif grep -Eqi "Raspbian" /etc/issue || grep -Eq "Raspbian" /etc/*-release; then
         DISTRO='Raspbian'
-        PM='apt'
+        PM='apk'
     else
         DISTRO='unknow'
         PM='unknow'
@@ -32,12 +32,13 @@ Get_Dist_Name(){
     # echo $DISTRO;
     echo $PM;
 }
+
 Get_Dist_Name
 
 
 echo "current OS package manager is $PM"
 
-## For rpm distro
+## ===================== Install format programs =======================
 
 ### bazel
 go install github.com/bazelbuild/buildtools/buildifier@latest
@@ -69,3 +70,14 @@ pip install sqlparse
 
 ### CMake
 pip install cmake_format
+
+
+## ===================== Install neovim init env programs =======================
+### Python 3 provider (optional)
+# /usr/bin/python3 -m pip install pynvim
+
+### Node.js provider (optional)
+# npm install -g neovim
+
+### Perl provider (optional)
+# sudo $PM install -y perl

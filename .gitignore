@@ -3,3 +3,7 @@ tag
 plugins/*
 
 temp_dirs/
+
+node_modules/
+package-lock.json
+package.json

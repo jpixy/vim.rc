@@ -16,4 +16,4 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
-echo "Installed the Ultimate Vim configuration into Vim successfully! Enjoy :-)"
+echo "Installed the Ultimate Vim/NeoVIM configuration (~/.vimrc) into system successfully! Enjoy :-)"
