@@ -32,7 +32,7 @@ call plug#begin('~/.vim_runtime/plugins')
 
 
 """ VIM appearance
-Plug 'jszakmeister/vim-togglecursor'
+" Plug 'jszakmeister/vim-togglecursor'
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/maximbaz/lightline-ale'
 

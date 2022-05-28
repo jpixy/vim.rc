@@ -3,8 +3,8 @@
 
 " setup cursor mode in differ VIM mode
 " autocmd InsertEnter,InsertLeave * set cul!
-autocmd InsertEnter * set cul
-autocmd InsertLeave * set nocul
+" autocmd InsertEnter * set cul
+" autocmd InsertLeave * set nocul
 
 
 
