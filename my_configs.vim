@@ -1,5 +1,12 @@
 " enable mouse
-" set mouse=a
+set mouse=a
+
+let mapleader = ","
+
+" Show the gird
+set cursorline
+set cursorcolumn
+
 
 " setup cursor mode in differ VIM mode
 " autocmd InsertEnter,InsertLeave * set cul!
