@@ -10,8 +10,9 @@
 " like highlight
 "
 " set background=light
+
 try
-    colorscheme default
+    " colorscheme default
     " colorscheme purify
     " colorscheme molokai
     " colorscheme PaperColor
