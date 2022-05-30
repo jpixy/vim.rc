@@ -74,10 +74,10 @@ Plug 'vim-autoformat/vim-autoformat'
 
 
 """ A collection of program language packs for Vim
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'https://github.com/rust-lang/rust.vim'
 " Plug 'https://github.com/plasticboy/vim-markdown'
 " Plug 'https://github.com/vim-ruby/vim-ruby'
