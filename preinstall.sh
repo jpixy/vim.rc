@@ -1,6 +1,6 @@
 #/bin/bash
 
-Get_Dist_Name(){
+Get_Dist_Name() {
     if grep -Eqii "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
         DISTRO='CentOS'
         PM='dnf'
@@ -30,11 +30,10 @@ Get_Dist_Name(){
         PM='unknow'
     fi
     # echo $DISTRO;
-    echo $PM;
+    echo $PM
 }
 
 Get_Dist_Name
-
 
 echo "current OS package manager is $PM"
 
@@ -70,7 +69,6 @@ pip install sqlparse
 
 ### CMake
 pip install cmake_format
-
 
 ## ===================== Install neovim init env programs =======================
 ### Python 3 provider (optional)
