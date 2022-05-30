@@ -56,7 +56,8 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 
 """ VIM VCS (Version Control Service) tools
-" Plug 'https://github.com/airblade/vim-gitgutter'
+Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/airblade/vim-gitgutter'
 
 
 """ VIM development tools
