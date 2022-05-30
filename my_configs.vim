@@ -1,13 +1,52 @@
+" if !has("gui_running")
+"    set t_Co=256
+" endif
+" set t_Co=256
+" highlight Normal ctermbg=NONE
+" highlight nonText ctermbg=NONE
+
+
+" you should put it before you want setup new color stuff
+" like highlight
+"
+" set background=light
+try
+    colorscheme default
+    " colorscheme purify
+    " colorscheme molokai
+    " colorscheme PaperColor
+    " colorscheme grubox
+catch
+endtry
+
+
+
+" Show the gird
+set cursorline
+set cursorcolumn
+
+
+" set textwidth=80
+" set tw=80
+" set wrap
+" set nowrap
+
+
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+" highlight ColorColumn ctermbg=16
+" highlight ColorColumn ctermbg=lightcyan guibg=blue
+" hi ColorColumn ctermbg=0 guibg=lightgrey
+set colorcolumn=80
+" set cc=80
+
+
+
 " enable mouse
 set mouse=a
 
 " Use default mapleader as \ key
 " So disable custome setting here
 " let mapleader = ","
-
-" Show the gird
-set cursorline
-set cursorcolumn
 
 
 
@@ -44,17 +83,6 @@ set nu
 
 
 
-" set textwidth=80
-" set tw=80
-
-set colorcolumn=80
-" set cc=80
-" highlight ColorColumn ctermbg=lightcyan guibg=blue
-" hi ColorColumn ctermbg=0 guibg=lightgrey
-
-" set wrap
-" set nowrap
-
 filetype on
 set autoindent
 set smartindent
@@ -66,26 +94,6 @@ set shiftwidth=4
 " set showmatch
 
 
-
-" if !has("gui_running")
-"    set t_Co=256
-" endif
-" set t_Co=256
-" highlight Normal ctermbg=NONE
-" highlight nonText ctermbg=NONE
-
-
-
-" set background=light
-
-try
-    colorscheme default
-    " colorscheme purify
-    " colorscheme molokai
-    " colorscheme PaperColor
-    " colorscheme grubox
-catch
-endtry
 
 
 
