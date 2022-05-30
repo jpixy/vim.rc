@@ -120,9 +120,9 @@ let g:netrw_banner = 0
 """ 1: Show list details; 2: Common list; 3: Tree
 let g:netrw_liststyle = 3
 """ Setup which window to show the opened file. 0: current window, replace the netrw window; 1: H-open; 2: V-open; 3: Tab-open; 4: New window to replace
-let g:netrw_browse_split = 4
+let g:netrw_browse_split = 3
 """ Set browser windows width 25%
-let g:netrw_winsize = 25
+" let g:netrw_winsize = 25
 """ Always show netrw on the laft when split
 let g:netrw_altv = 1
 """ Open netrw automatic
