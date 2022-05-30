@@ -60,14 +60,14 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 
 """ VIM development tools
-""" NeoVIM """
+""" NeoVIM
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mfussenegger/nvim-dap'
-""" VIM / NeoVIM """
+""" VIM / NeoVIM
 Plug 'majutsushi/tagbar'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/Shougo/echodoc.vim'
