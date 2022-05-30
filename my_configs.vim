@@ -1,7 +1,9 @@
 " enable mouse
 set mouse=a
 
-let mapleader = "\"
+" Use default mapleader as \ key
+" So disable custome setting here
+" let mapleader = ","
 
 " Show the gird
 set cursorline
