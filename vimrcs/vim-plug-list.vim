@@ -33,8 +33,8 @@ call plug#begin('~/.vim_runtime/plugins')
 
 """ VIM appearance
 " Plug 'jszakmeister/vim-togglecursor'
-Plug 'https://github.com/itchyny/lightline.vim'
-Plug 'https://github.com/maximbaz/lightline-ale'
+" Plug 'https://github.com/itchyny/lightline.vim'
+" Plug 'https://github.com/maximbaz/lightline-ale'
 
 
 """ VIM editor enhancement
@@ -56,7 +56,7 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 
 """ VIM VCS (Version Control Service) tools
-Plug 'https://github.com/airblade/vim-gitgutter'
+" Plug 'https://github.com/airblade/vim-gitgutter'
 
 
 """ VIM development tools
@@ -74,8 +74,8 @@ Plug 'vim-autoformat/vim-autoformat'
 
 
 """ A collection of program language packs for Vim
+" Plug 'dense-analysis/ale'
 Plug 'https://github.com/sheerun/vim-polyglot'
-Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'https://github.com/rust-lang/rust.vim'
