@@ -32,7 +32,7 @@ call plug#begin('~/.vim_runtime/plugins')
 
 
 """ VIM appearance
-" Plug 'jszakmeister/vim-togglecursor'
+Plug 'jszakmeister/vim-togglecursor'
 " Plug 'https://github.com/itchyny/lightline.vim'
 " Plug 'https://github.com/maximbaz/lightline-ale'
 
@@ -76,8 +76,10 @@ Plug 'mfussenegger/nvim-dap'
 Plug 'majutsushi/tagbar'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/Shougo/echodoc.vim'
-Plug 'vim-autoformat/vim-autoformat'
-" Plug 'sbdchd/neoformat'
+""" Format tool
+Plug 'sbdchd/neoformat'
+" Plug 'vim-autoformat/vim-autoformat'
+" Plug 'https://github.com/google/vim-codefmt'
 
 
 """ VIM development tools - Debug

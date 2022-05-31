@@ -517,13 +517,6 @@ highlight link EchoDocPopup Pmenu
 
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" => Neoformat
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"nmap <leader>ff :Neoformat<CR>
-
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-go
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -558,10 +551,17 @@ let g:go_highlight_operators = 1
 
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Neoformat
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>ii :Neoformat<CR>
+
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <M-i> :Autoformat<CR>
+" nmap <leader>ii :Autoformat<CR>
 """ C settings
 let g:formatdef_custom_c='"astyle --style=google"'
 let g:formatters_c = ['custom_c']
@@ -569,6 +569,26 @@ let g:formatdef_custom_cpp = '"astyle --style=google"'
 let g:formatters_cpp = ['custom_cpp']
 """ autoformat upon saving file
 " au BufWrite * :Autoformat
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => google/vim-codefmt
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nmap <leader>ii :FormatCode<CR>
+" augroup autoformat_settings
+"   autocmd FileType bzl AutoFormatBuffer buildifier
+"   autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+"   autocmd FileType dart AutoFormatBuffer dartfmt
+"   autocmd FileType go AutoFormatBuffer gofmt
+"   autocmd FileType gn AutoFormatBuffer gn
+"   autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+"   autocmd FileType java AutoFormatBuffer google-java-format
+"   autocmd FileType python AutoFormatBuffer yapf
+"   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+"   autocmd FileType rust AutoFormatBuffer rustfmt
+"   autocmd FileType vue AutoFormatBuffer prettier
+" augroup END
 
 
 
