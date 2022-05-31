@@ -485,7 +485,7 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " defualt settings is $HOME/.local/share/vim-lsp-settings/servers
 " or $XDG_DATA_HOME/vim-lsp-settings/servers
-let g:lsp_settings_servers_dir = '$HOME/.vim_runtime/plugins/lsp-servers/'
+let g:lsp_settings_servers_dir = '~/.vim_runtime/plugins/lsp-servers/'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
