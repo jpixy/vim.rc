@@ -42,14 +42,18 @@ Plug 'https://github.com/jlanzarotta/bufexplorer'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'https://github.com/scrooloose/nerdtree'
-" Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug '907th/vim-auto-save'
+" Explorer plugins
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 
 """ VIM search tools
 Plug 'https://github.com/mileszs/ack.vim'
+Plug 'jremmen/vim-ripgrep'
 Plug 'https://github.com/vim-scripts/mru.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim'
