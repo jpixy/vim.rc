@@ -5,6 +5,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
@@ -13,6 +14,7 @@
 " call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
 " call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 " call pathogen#helptags()
+
 
 
 """"""""""""""""""""""""""""""
@@ -25,11 +27,13 @@ let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
 
+
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
+
 
 
 """"""""""""""""""""""""""""""
@@ -39,6 +43,7 @@ let g:yankstack_yank_keys = ['y', 'd']
 
 nmap <C-p> <Plug>yankstack_substitute_older_paste
 nmap <C-n> <Plug>yankstack_substitute_newer_paste
+
 
 
 """""""""""""""""""""""""""""""
@@ -52,6 +57,7 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 
 "let g:ctrlp_max_height = 20
 "let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+
 
 
 """"""""""""""""""""""""""""""
@@ -90,11 +96,13 @@ noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
 noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
 
 
+
 """"""""""""""""""""""""""""""
 " => ZenCoding
 """"""""""""""""""""""""""""""
 " Enable all functions in all modes
 let g:user_zen_mode='a'
+
 
 
 """"""""""""""""""""""""""""""
@@ -104,11 +112,13 @@ ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
 snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 
 
+
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
+
 
 
 """"""""""""""""""""""""""""""
@@ -142,17 +152,20 @@ let g:netrw_altv = 1
 " let g:netrw_localrmdir = 'rm -rf'
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd Tree
+" => preservim/nerdtree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>nt :NERDTree<CR>
+nnoremap <leader>nb :NERDTreeFromBookmark<Space>
+nnoremap <leader>nf :NERDTreeFind<CR>
 let g:NERDTreeWinPos = "left"
-let NERDTreeShowHidden=0
+let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 let NERDTreeHighlightCursorline=1
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 " let the course on the right editor zone by default
@@ -161,6 +174,7 @@ autocmd VimEnter * wincmd p
 " Close Nerdtree if no files specified
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -179,6 +193,7 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim config
 " Annotate strings with gettext 
@@ -187,10 +202,12 @@ vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let g:airline_theme='onehalfdark'
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -218,6 +235,8 @@ let g:lightline = {
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
 
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -225,6 +244,7 @@ let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
 nnoremap <silent> <leader>z :Goyo<cr>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -246,6 +266,7 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -253,10 +274,12 @@ let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>tt :TagbarToggle<cr>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -283,6 +306,7 @@ if !isdirectory(s:vim_tags)
 endif
 
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => YCM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -301,6 +325,7 @@ endif
 "           \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
 "           \ 'cs,lua,javascript': ['re!\w{2}'],
 "           \ }
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -470,22 +495,13 @@ endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => preservim/nerdtree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <leader>nn :NERDTree<CR>
-nnoremap <leader>nt :NERDTreeToggle<CR>
-nnoremap <leader>nf :NERDTreeFind<CR>
-
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => prabirshrestha/vim-lsp
 " => mattn/vim-lsp-settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " defualt settings is $HOME/.local/share/vim-lsp-settings/servers
 " or $XDG_DATA_HOME/vim-lsp-settings/servers
 let g:lsp_settings_servers_dir = '~/.vim_runtime/plugins/lsp-servers/'
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -500,10 +516,12 @@ let g:echodoc#type = 'popup'
 highlight link EchoDocPopup Pmenu
 
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => Neoformat
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "nmap <leader>ff :Neoformat<CR>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -520,11 +538,13 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 
 
+
 """"""""""""""""""""""""""""""
 " => sheerun/vim-polyglot plugin
 """"""""""""""""""""""""""""""
 " let g:polyglot_disabled = ['markdown.plugin']
 " let g:polyglot_disabled = ['autoindent']
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -537,9 +557,9 @@ let g:go_highlight_operators = 1
 "let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-autoformat
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <M-i> :Autoformat<CR>
 """ C settings
@@ -549,6 +569,7 @@ let g:formatdef_custom_cpp = '"astyle --style=google"'
 let g:formatters_cpp = ['custom_cpp']
 """ autoformat upon saving file
 " au BufWrite * :Autoformat
+
 
 
 """"""""""""""""""""""""""""""
