@@ -120,6 +120,12 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 """ Setup which window to show the opened file. 0: current window, replace the netrw window; 1: H-open; 2: V-open; 3: Tab-open; 4: New window to replace
 let g:netrw_browse_split = 3
+""" open files from netrw in a previous window, unless we're opening the current dir
+" if argv(0) ==# '.'
+"     let g:netrw_browse_split = 2
+" else
+"     let g:netrw_browse_split = 4
+" endif
 """ Set browser windows width 25%
 " let g:netrw_winsize = 25
 """ Always show netrw on the laft when split
