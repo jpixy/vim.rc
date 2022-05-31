@@ -63,11 +63,11 @@ Plug 'https://github.com/airblade/vim-gitgutter'
 """ VIM development tools
 """ NeoVIM
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'mfussenegger/nvim-dap'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'mfussenegger/nvim-dap'
 """ VIM / NeoVIM
 Plug 'majutsushi/tagbar'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
@@ -86,7 +86,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'dense-analysis/ale'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'https://github.com/rust-lang/rust.vim'
 " Plug 'https://github.com/plasticboy/vim-markdown'
 " Plug 'https://github.com/vim-ruby/vim-ruby'
