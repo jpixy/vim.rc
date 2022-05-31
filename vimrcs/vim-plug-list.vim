@@ -117,7 +117,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug 'https://github.com/garbas/vim-snipmate'
 " Plug 'https://github.com/honza/vim-snippets'
 " Plug 'https://github.com/terryma/vim-expand-region'
-" Plug 'https://github.com/tpope/vim-fugitive'
 " Plug 'https://github.com/junegunn/goyo.vim'
 " Plug 'https://github.com/amix/vim-zenroom2'
 " Plug 'https://github.com/tpope/vim-repeat'
