@@ -468,6 +468,17 @@ endif
 " let g:coc_data_home = '$HOME/.vim_runtime/plugins/coc_data/'
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => preservim/nerdtree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>nn :NERDTree<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => prabirshrestha/vim-lsp
 " => mattn/vim-lsp-settings
