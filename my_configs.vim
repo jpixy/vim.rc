@@ -24,9 +24,9 @@ endtry
 
 
 
-" Show the gird
-set cursorline
-set cursorcolumn
+" " Show the gird
+" set cursorline
+" set cursorcolumn
 
 
 " set textwidth=80
