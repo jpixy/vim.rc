@@ -42,6 +42,7 @@ Plug 'https://github.com/jlanzarotta/bufexplorer'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug '907th/vim-auto-save'
 " Explorer plugins
