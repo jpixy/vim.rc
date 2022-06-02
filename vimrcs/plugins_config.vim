@@ -308,6 +308,16 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => prabirshrestha/asyncomplete.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:asyncomplete_auto_popup = 1
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => YCM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:ycm_add_preview_to_completeopt = 0
