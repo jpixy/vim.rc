@@ -25,8 +25,8 @@ endtry
 
 
 " " Show the gird
-" set cursorline
-" set cursorcolumn
+set cursorline
+set cursorcolumn
 
 
 " set textwidth=80
@@ -35,8 +35,9 @@ endtry
 " set nowrap
 
 
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
-" highlight ColorColumn ctermbg=16
+highlight ColorColumn ctermbg=LightCyan
+" highlight ColorColumn guibg=#b8e994
+" highlight ColorColumn ctermfg=235 ctermbg=16 guibg=#bdc3c7
 " highlight ColorColumn ctermbg=lightcyan guibg=blue
 " hi ColorColumn ctermbg=0 guibg=lightgrey
 set colorcolumn=80
