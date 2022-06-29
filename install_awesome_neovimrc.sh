@@ -3,10 +3,10 @@
 ## If you want to use pure runtime control for NeoVim
 ## Please use https://github.com/jpixy/nvim.rc
 
-echo "==================================="
-echo "If you want to use pure runtime control for NeoVim"
-echo "Please use https://github.com/jpixy/nvim.rc"
-echo "==================================="
+## echo "==================================="
+## echo "If you want to use pure runtime control for NeoVim"
+## echo "Please use https://github.com/jpixy/nvim.rc"
+## echo "==================================="
 
 
 
